@@ -118,7 +118,8 @@ body {
   background: rgba(76, 123, 243, 0.77);
 }
 
-.main-section__form-error {
+.main-section__form-error,
+.main-section__form-success {
   font-style: italic;
   font-weight: 400;
   font-size: 1.2rem;
@@ -129,15 +130,24 @@ body {
   padding-left: 3rem;
   display: none;
 }
+.main-section__form-success {
+  color: #34ee43;
+}
 .error-input {
   border: 1px solid #ff5466;
+}
+.success-input {
+  border: 1px solid #34ee43;
 }
 .input_.error-input::placeholder {
   color: #ff5466;
 }
-.error-input ~ .main-section__form-error {
+
+.error-input ~ .main-section__form-error,
+.success-input ~ .main-section__form-success {
   display: block;
 }
+
 .section-hero {
   max-width: 64rem;
   margin: 0 auto;

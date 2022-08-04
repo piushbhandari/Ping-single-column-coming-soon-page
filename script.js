@@ -12,6 +12,15 @@ function validateWithRegex(e) {
     input.classList.toggle("error-input");
     errorMsg.textContent = "Please provide a valid email address 🥺🥺🥺🥺";
   } else {
-    input.classList.toggle("error-input");
+    input.classList.remove("error-input");
+    input.classList.add("success-input");
+    clearInput();
   }
+}
+
+function clearInput() {
+  setTimeout(() => {
+    input.classList.remove("success-input");
+    input.value = "";
+  }, 3000);
 }
