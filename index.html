@@ -16,19 +16,45 @@
       <section class="main-section">
         <h1 class="main-section__title">We are launching <span>soon!</span></h1>
         <p class="main-section__sub-title">Subscribe and get notified</p>
+
+        <form action="" class="main-section__form">
+          <input
+            class="input_ error-input"
+            type="text"
+            placeholder="Your email adress..."
+          />
+          <button class="main-section__cta">Notify Me</button>
+          <p class="main-section__form-error">yooooooooooooooooo......</p>
+        </form>
       </section>
       <section class="section-hero">
-        <img src="./images/illustration-dashboard.png" alt="weird graphic" />
+        <img
+          class="fit-image"
+          src="./images/illustration-dashboard.png"
+          alt="weird graphic"
+        />
       </section>
     </main>
-    <footer class="footer">
-      <ul class="footer__icon-box">
-        <li class="footer__icon"><i class="fa-brands fa-facebook-f"></i></li>
-        <li class="footer__icon"><i class="fa-brands fa-twitter"></i></li>
-        <li class="footer__icon"><i class="fa-brands fa-instagram"></i></li>
+    <footer class="footer flex-column">
+      <ul class="footer__icon-box flex">
+        <li>
+          <a aria-label="facebook" class="footer__icon flex-center" href="#">
+            <i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="twitter" class="footer__icon flex-center" href="#"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </li>
+        <li>
+          <a aria-label="instagram" class="footer__icon flex-center" href="#">
+            <i class="fa-brands fa-instagram"></i
+          ></a>
+        </li>
       </ul>
       <p class="footer__copyight">
-        Notify Me &copy; Copyright Ping. All rights reserved.
+        &copy; Copyright Ping. All rights reserved.
       </p>
     </footer>
     <script

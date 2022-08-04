@@ -26,6 +26,9 @@ a,
 button {
   transition: 0.3s ease-in-out;
 }
+.flex {
+  display: flex;
+}
 .flex-center {
   display: flex;
   justify-content: center;
@@ -51,7 +54,120 @@ button {
 }
 body {
   min-height: 100vh;
-  display: flex;
+  padding: 8rem 2.8rem 4.9rem 2.8rem;
+}
+.nav {
+  width: fit-content;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.main-section {
+  margin-bottom: 9.4rem;
+  text-align: center;
+}
+.main-section__title {
+  font-weight: 300;
+  font-size: 4.8rem;
+  line-height: 6rem;
+  color: #969696;
+  margin-bottom: 1.6rem;
+}
+.main-section__title span {
+  font-weight: 700;
+  color: #15202a;
+}
+.main-section__sub-title {
+  color: #15202a;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  margin-bottom: 4rem;
+}
+.main-section__form {
+  max-width: 63.7rem;
+  margin: 0 auto;
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 20.12rem;
+  gap: 0.6rem 1.6rem;
+}
+.main-section__form > * {
+  border-radius: 2.8rem;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+}
+.input_ {
+  /* flex: 2; */
+  padding: 1.8rem 3rem;
+  font-weight: 300;
+  color: #15202a;
+  border: 1px solid #c2d3ff;
+  box-shadow: 0 0px 7px 3px rgba(0, 0, 0, 0.0001);
+}
+.input_::placeholder {
+  color: #b8c7ed;
+}
+.main-section__form button {
+  padding: 1.9rem 6.3rem;
+  background: #4c7bf3;
+  box-shadow: 0 5px 10px 2px rgba(76, 123, 243, 0.230414);
+  color: white;
+  font-weight: 600;
+}
+
+.main-section__form-error {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 0.15px;
+  color: #ff5466;
+  text-align: left;
+  padding-left: 3rem;
+  display: none;
+}
+.error-input {
+  border: 1px solid #ff5466;
+}
+.input_.error-input::placeholder {
+  color: #ff5466;
+}
+.error-input ~ .main-section__form-error {
+  display: block;
+}
+.section-hero {
+  max-width: 64rem;
+  margin: 0 auto;
+  margin-bottom: 7.2rem;
+}
+.footer {
+  max-width: 20.4rem;
+  margin: 0 auto;
+  gap: 2.5rem;
+}
+.footer__copyight {
+  color: #969696;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.footer__icon-box {
+  gap: 1.171rem;
   justify-content: center;
-  align-items: center;
+}
+.footer__icon {
+  border-radius: 50%;
+  border: 0.918px solid rgba(76, 23, 243, 0.146498);
+  width: 3.2rem;
+  height: 3.2rem;
+  font-size: 1.4rem;
+  color: #4c7bf3;
+}
+.footer__icon:hover,
+.footer__icon:focus {
+  background-color: #4c7bf3;
+  color: white;
+  transform: scale(1.4) translateY(-0.5rem);
 }
