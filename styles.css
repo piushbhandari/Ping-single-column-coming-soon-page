@@ -60,11 +60,13 @@ body {
   width: fit-content;
   margin: 0 auto;
   margin-bottom: 4rem;
+  animation: slideInLeft 1s;
 }
 
 .main-section {
   margin-bottom: 9.4rem;
   text-align: center;
+  animation: slideInRight 1s;
 }
 .main-section__title {
   font-weight: 300;
@@ -152,11 +154,13 @@ body {
   max-width: 64rem;
   margin: 0 auto;
   margin-bottom: 7.2rem;
+  animation: slideInLeft 1s;
 }
 .footer {
   max-width: 20.4rem;
   margin: 0 auto;
   gap: 2.5rem;
+  animation: slideInRight 1s;
 }
 .footer__copyight {
   color: #969696;
@@ -229,5 +233,33 @@ body {
   .footer__copyight {
     font-size: 1rem;
     line-height: 1.2rem;
+  }
+}
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-90rem);
+  }
+  75% {
+    opacity: 0.75;
+    transform: translateX(30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(90rem);
+  }
+  75% {
+    opacity: 0.75;
+    transform: translateX(-30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
   }
 }

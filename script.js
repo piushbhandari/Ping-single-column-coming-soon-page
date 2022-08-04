@@ -9,7 +9,7 @@ function validateWithRegex(e) {
   let validRegex =
     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   if (!inputVal.match(validRegex)) {
-    input.classList.toggle("error-input");
+    input.classList.add("error-input");
     errorMsg.textContent = "Please provide a valid email address 🥺🥺🥺🥺";
   } else {
     input.classList.remove("error-input");
